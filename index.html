@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotocopy Pratama - Digital Printing & Copy Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Animasi Printer Joget */
+      @keyframes dance {
+        0%, 100% {
+          transform: translateY(0) rotate(0deg) scale(1);
+        }
+        25% {
+          transform: translateY(-8px) rotate(-6deg) scale(1.05);
+        }
+        50% {
+          transform: translateY(0) rotate(0deg) scale(1);
+        }
+        75% {
+          transform: translateY(-8px) rotate(6deg) scale(1.05);
+        }
+      }
+
+      .animate-dance {
+        animation: dance 0.9s infinite ease-in-out;
+      }
+
+      /* Animasi Awan Melayang */
+      @keyframes floatCloud {
+        0% {
+          transform: translateX(-20px);
+        }
+        50% {
+          transform: translateX(30px);
+        }
+        100% {
+          transform: translateX(-20px);
+        }
+      }
+
+      .animate-cloud-slow {
+        animation: floatCloud 8s infinite ease-in-out;
+      }
+
+      .animate-cloud-fast {
+        animation: floatCloud 5s infinite ease-in-out reverse;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 font-sans selection:bg-blue-500 selection:text-white relative"
+  >
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-3 group cursor-pointer">
+          <!-- Logo -->
+          <div
+            class="w-10 h-10 rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 flex items-center justify-center bg-white shadow-sm border border-slate-200"
+          >
+            <img
+              src="d:\program web pwb\Image 2026-09-20 at 23.35.32.jpeg"
+              alt="Logo Fotocopy Pratama"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <span
+            class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent transition-opacity duration-300"
+            >Fotocopy Pratama</span
+          >
+        </div>
+        <div
+          class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600"
+        >
+          <a
+            href="#hero"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Beranda</a
+          >
+          <a
+            href="#sejarah"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Sejarah</a
+          >
+          <a
+            href="#gambar"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Picture Company</a
+          >
+          <a
+            href="#fotocopy"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Fotocopy</a
+          >
+          <a 
+            href="#layanan"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Layanan</a
+          >
+          <a
+            href="#transaksi"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Transaksi</a
+          >
+          <a 
+            href="#pelanggan"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Data Pelanggan</a
+          >
+          <a
+            href="#lokasi"
+            class="hover:text-blue-600 transition-colors duration-200 hover:scale-105 transform"
+            >Lokasi</a
+          >
+        </div>
+        <a
+          href="https://wa.me/6281234567890"
+          target="_blank"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 flex items-center gap-2"
+        >
+          <i class="fab font-bold fa-whatsapp"></i> Order Online
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center relative overflow-hidden"
+    >
+      <div class="transition-all duration-700 transform translate-y-0 relative z-10">
+        
+        <!-- Elemen Awan Bergerak di atas teks -->
+        <div class="flex items-center gap-4 mb-2 pointer-events-none select-none">
+          <i class="fas fa-cloud text-blue-300 text-3xl opacity-70 animate-cloud-slow"></i>
+          <i class="fas fa-cloud text-blue-200 text-2xl opacity-50 animate-cloud-fast"></i>
+          <i class="fas fa-cloud text-indigo-300 text-4xl opacity-40 animate-cloud-slow"></i>
+        </div>
+
+        <span
+          class="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider inline-block animate-pulse"
+          >Cepat & Berkualitas</span
+        >
+        <h1
+          class="text-4xl md:text-5xl font-extrabold mt-4 mb-4 text-slate-900 leading-tight"
+        >
+          Solusi Cetak & Fotokopi Serba Digital
+        </h1>
+        <p class="text-slate-600 text-lg mb-6">
+          Cetak dokumen, jilid skripsi, hingga cetak banner tanpa antre. Upload
+          file Anda dan ambil saat sudah selesai.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#gambar"
+            class="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/30 hover:bg-blue-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/40"
+            >Lihat Koleksi Kami</a
+          >
+          <a
+            href="#lokasi"
+            class="bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-all duration-300 hover:-translate-y-1"
+            >Cari Cabang</a
+          >
+        </div>
+      </div>
+    
+      <div
+        class="bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-2xl p-8 text-white shadow-2xl relative overflow-hidden transition-all duration-500 hover:scale-[1.02]"
+      >
+        <div
+          class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-pulse"
+        ></div>
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold mb-2">Layanan Express 24/7</h3>
+          <p class="text-blue-100 mb-6">
+            Kirim berkas kapan saja via WhatsApp, kami siapkan dokumen Anda.
+          </p>
+          <div class="space-y-3">
+            <div
+              class="flex items-center gap-3 bg-white/10 backdrop-blur-md p-3 rounded-lg transition-all duration-300 hover:bg-white/20 hover:translate-x-1"
+            >
+              <i class="fas fa-check-circle text-green-400"></i> Cetak Dokumen High Speed
+            </div>
+            <div
+              class="flex items-center gap-3 bg-white/10 backdrop-blur-md p-3 rounded-lg transition-all duration-300 hover:bg-white/20 hover:translate-x-1"
+            >
+              <i class="fas fa-check-circle text-green-400"></i> Jilid Hardcover & Skripsi
+            </div>
+            <div
+              class="flex items-center gap-3 bg-white/10 backdrop-blur-md p-3 rounded-lg transition-all duration-300 hover:bg-white/20 hover:translate-x-1"
+            >
+              <i class="fas fa-check-circle text-green-400"></i> Scan Dokumen HD
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sejarah Perusahaan -->
+    <section id="sejarah" class="bg-white py-16 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-slate-900">Sejarah Perusahaan</h2>
+          <p class="text-slate-600 mt-2">
+            Perjalanan kami melayani kebutuhan cetak masyarakat
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-slate-50 p-6 rounded-2xl border border-slate-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 group"
+          >
+            <span
+              class="text-blue-600 font-bold text-lg inline-block transition-transform duration-300 group-hover:scale-110"
+              >2013</span
+            >
+            <h3 class="text-xl font-semibold mt-2 mb-2">
+              Berdiri Pertama Kali
+            </h3>
+            <p class="text-slate-600 text-sm">
+              Fotocopy Pratama didirikan pada tahun 2013 sebagai sebuah badan
+              usaha perseorangan yang bergerak di bidang layanan jasa
+              dokumentasi dan penyediaan alat tulis kantor.
+            </p>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-2xl border border-slate-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 group"
+          >
+            <h3 class="text-xl font-semibold mt-2 mb-2">Visi</h3>
+            <p class="text-slate-600 text-sm">
+              Menambahkan mesin digital printing modern dan sistem pemesanan
+              berkas jarak jauh.
+            </p>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-2xl border border-slate-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 group"
+          >
+            <h3 class="text-xl font-semibold mt-2 mb-2">Misi</h3>
+            <p class="text-slate-600 text-sm">
+              Kini memiliki 5 cabang modern dengan integrasi pemesanan secara
+              online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gambar Company -->
+    <section id="gambar" class="bg-white py-16 border-y border-slate-200">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-slate-900">
+            Gambar Profile Company
+          </h2>
+          <p class="text-slate-600 mt-2">
+            Fasilitas dan perlengkapan penunjang kualitas pelayanan kami
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group"
+          >
+            <img
+              src="https://bangkitperkasa.com/storage/2023/12/Buku-Tulis-Campuss-50-Lembar.jpeg"
+              alt="Buku"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Buku
+            </p>
+          </div>
+          <div
+            class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group"
+          >
+            <img
+              src="https://down-id.img.susercontent.com/file/4dbbc5d5c1f8bbdd16f283c1cf3ba8e0"
+              alt="pulpen"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Pulpen
+            </p>
+          </div>
+          <div
+            class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group"
+          >
+            <img
+              src="https://siplah.blibli.com/data/images/SAGH-0001-00017/980c8e5f-d008-4df6-b975-38541405452c.jpg"
+              alt="Penggaris"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Penggaris
+            </p>
+          </div>
+          <div
+            class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group"
+          >
+            <img
+              src="https://images.tokopedia.net/img/cache/700/aphluv/1997/1/1/77564e6e822d4b6c839d2a3be492f16f~.jpeg.webp"
+              alt="Penghapus"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Penghapus
+            </p>
+          </div>
+          <div 
+          class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group">
+          <img
+              src="https://andalanatk.com/upload/produk/315035_produk.jpg"
+              alt="Tape-ex"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Tape-ex
+            </p>
+          </div>
+          <div class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group">
+            <img
+              src="https://shop.kenko.co.id/image/cache/catalog/product/Stapler/Stapler-HD-10-700x700.jpg"
+              alt="Stapeler"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Stapeler
+            </p>
+          </div>
+          <div class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group">
+            <img
+              src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/080258ae85e449e5accca0c58ad28a00~tplv-aphluv4xwc-white-pad-v1:500:500.jpeg"
+              alt="Paper clip"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Paper clip
+            </p>
+        </div>
+        <div class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group">
+            <img
+              src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/3/27/ad623996-8ffc-4dee-a0b4-fb6fb1b34bf6.jpg.webp"
+              alt="Spidol"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Spidol 
+            </p>
+        </div>
+        <div class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group">
+            <img
+              src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//103/MTA-54657841/joyko_pencil_-_pensil_2b_joyko_p-88_hijau_1_box_full01_epx0mi6w.jpg"
+              alt="Pensil 2B"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Pensil 2B
+            </p>
+        </div>
+        <div class="bg-slate-100 p-3 rounded-2xl shadow-sm overflow-hidden group">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReSPwz7qV86q8xb7S_YYY8bSMjOAgAw2MibrdNd-tbFCcIWK2w5RFBgSAb&s=10"
+              alt="Stabilo"
+              class="w-full h-64 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+            />
+            <p class="text-center text-sm font-medium text-slate-700 mt-3">
+              Stabilo
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video / Media Profile Fotocopy -->
+    <section id="fotocopy" class="bg-slate-50 py-16 border-y border-slate-200">
+      <div class="max-w-3xl mx-auto px-4">
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 text-center">
+          <h3 class="text-2xl font-bold text-slate-900 mb-4">
+            ~ Profile Company Fotocopy ~
+          </h3>
+          
+          <a 
+            href="https://youtu.be/mVGtgm-sp54?si=CI2lJqY_sKfpt6L5" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-red-950 h-72 md:h-96 flex flex-col justify-center items-center p-6 border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]"
+          >
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"></div>
+
+            <div class="relative z-10 flex flex-col items-center">
+              <div class="w-20 h-20 bg-red-600 text-white rounded-2xl flex items-center justify-center text-4xl shadow-xl shadow-red-600/40 group-hover:scale-110 group-hover:bg-red-500 transition-all duration-300 mb-4">
+                <i class="fab fa-youtube"></i>
+              </div>
+
+              <h4 class="text-xl md:text-2xl font-bold text-white mb-2">Tonton Video Profil Kami</h4>
+              <p class="text-slate-300 text-sm max-w-md mb-6">
+                Saksikan fasilitas lengkap Fotocopy Pratama langsung di YouTube.
+              </p>
+
+              <span class="inline-flex items-center gap-2 bg-white text-slate-900 hover:bg-red-600 hover:text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 shadow-md">
+                <i class="fas fa-play text-xs"></i> Tonton di YouTube
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan Print, Scan & Fotocopy -->
+    <section id="layanan" class="bg-slate-50 py-16 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-slate-900">Layanan Print, Scan & Fotocopy</h2>
+          <p class="text-slate-600 mt-2">Berbagai pilihan layanan cetak profesional untuk kebutuhan Anda</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4">
+              <i class="fas fa-copy"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Fotocopy Kilat</h3>
+            <p class="text-slate-600 text-sm mb-4">Layanan fotocopy hitam putih dan warna berkecepatan tinggi dengan hasil tajam dan kertas berkualitas.</p>
+            <ul class="text-sm text-slate-500 space-y-1">
+              <li><i class="fas fa-check text-green-500 mr-2"></i> Kertas A4, F4, A3</li>
+              <li><i class="fas fa-check text-green-500 mr-2"></i> Bolak-balik otomatis</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-4">
+              <i class="fas fa-print"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Print Dokumen</h3>
+            <p class="text-slate-600 text-sm mb-4">Cetak dokumen dari flashdisk, email, atau WhatsApp dengan berbagai pilihan gramatur kertas.</p>
+            <ul class="text-sm text-slate-500 space-y-1">
+              <li><i class="fas fa-check text-green-500 mr-2"></i> Print Laser / Inkjet</li>
+              <li><i class="fas fa-check text-green-500 mr-2"></i> Dokumen & Buku Warna</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4">
+              <i class="fas fa-file-invoice"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Scan Resolusi Tinggi</h3>
+            <p class="text-slate-600 text-sm mb-4">Digitalisasi arsip, ijazah, atau dokumen penting lainnya ke dalam format PDF, JPEG, atau PNG berkualitas HD.</p>
+            <ul class="text-sm text-slate-500 space-y-1">
+              <li><i class="fas fa-check text-green-500 mr-2"></i> Scan A4 hingga A3</li>
+              <li><i class="fas fa-check text-green-500 mr-2"></i> Kirim langsung via Email/WA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transaksi Fotocopy & Pembayaran -->
+    <section id="transaksi" class="bg-white py-16 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h3 class="text-2xl font-bold text-slate-900 mb-4">Form Transaksi Baru</h3>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">Nama Pelanggan</label>
+              <input type="text" placeholder="Masukkan nama pelanggan" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">Jenis Layanan</label>
+              <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                <option>Fotocopy A4/F4</option>
+                <option>Print Dokumen Warna</option>
+                <option>Scan Dokumen</option>
+                <option>Jilid Buku / Skripsi</option>
+              </select>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-slate-700 mb-1">Jumlah (Lembar/Pcs)</label>
+                <input type="number" placeholder="0" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700 mb-1">Metode Pembayaran</label>
+                <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                  <option>Tunai (Cash)</option>
+                  <option>QRIS / Transfer Bank</option>
+                  <option>E-Wallet (OVO/GoPay/Dana)</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-all shadow-md hover:shadow-blue-500/20">
+              Proses Transaksi & Pembayaran
+            </button>
+          </form>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4">Riwayat Transaksi</h3>
+          <div class="overflow-x-auto rounded-xl border border-slate-200">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                <tr>
+                  <th class="p-3">ID</th>
+                  <th class="p-3">Pelanggan</th>
+                  <th class="p-3">Layanan</th>
+                  <th class="p-3">Status</th>
+                  <th class="p-3">Pembayaran</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 bg-white">
+                <tr>
+                  <td class="p-3 font-medium">#TRX001</td>
+                  <td class="p-3">Rahardian</td>
+                  <td class="p-3">Print Warna (50 lbr)</td>
+                  <td class="p-3"><span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-semibold">Selesai</span></td>
+                  <td class="p-3 text-slate-600">QRIS (Lunas)</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">#TRX002</td>
+                  <td class="p-3">Rayhan</td>
+                  <td class="p-3">Fotocopy (120 lbr)</td>
+                  <td class="p-3"><span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs font-semibold">Proses</span></td>
+                  <td class="p-3 text-slate-600">Tunai</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-medium">#TRX003</td>
+                  <td class="p-3">Ahmad Fauzi</td>
+                  <td class="p-3">Scan Dokumen</td>
+                  <td class="p-3"><span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-semibold">Selesai</span></td>
+                  <td class="p-3 text-slate-600">Transfer (Lunas)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Pelanggan -->
+    <section id="pelanggan" class="bg-slate-50 py-16 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+          <div>
+            <h2 class="text-3xl font-bold text-slate-900">Data Pelanggan Setia</h2>
+            <p class="text-slate-600 mt-1">Daftar pelanggan terdaftar dan member fotocopy</p>
+          </div>
+          <button class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">
+            <i class="fas fa-user-plus"></i> Tambah Pelanggan
+          </button>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-lg">R</div>
+            <div>
+              <h4 class="font-bold text-slate-900">Rahardian</h4>
+              <p class="text-xs text-slate-500">0812-3456-7891</p>
+              <span class="inline-block mt-1 text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-medium">Member VIP</span>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-lg">R</div>
+            <div>
+              <h4 class="font-bold text-slate-900">Rayhan</h4>
+              <p class="text-xs text-slate-500">0856-7890-1234</p>
+              <span class="inline-block mt-1 text-xs bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded font-medium">Pelanggan Umum</span>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-lg">AF</div>
+            <div>
+              <h4 class="font-bold text-slate-900">Ahmad Fauzi</h4>
+              <p class="text-xs text-slate-500">0821-9876-5432</p>
+              <span class="inline-block mt-1 text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-medium">Member VIP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fitur Maps & Lokasi -->
+    <section id="lokasi" class="bg-slate-900 text-white py-16">
+      <div
+        class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center"
+      >
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Temukan Lokasi Kami</h2>
+          <p class="text-slate-400 mb-6">
+            Kunjungi cabang terdekat kami untuk layanan cetak langsung di tempat.
+          </p>
+          <div class="space-y-4">
+            <div
+              class="flex items-start gap-4 p-3 rounded-xl transition-all duration-300 hover:bg-slate-800/60"
+            >
+              <i
+                class="fas fa-map-marker-alt text-blue-500 text-xl mt-1 animate-bounce"
+              ></i>
+              <div>
+                <h4 class="font-bold">Cabang Utama</h4>
+                <p class="text-sm text-slate-400">
+                  Jl. Sekolahan no.68 Jakarta Timur
+                </p>
+                <p class="text-xs text-blue-400 mt-1">
+                  Buka: 07.00 - 22.00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-64 bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10"
+        >
+          <iframe
+            class="w-full h-full border-0 filter grayscale hover:grayscale-0 transition-all duration-500"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8115682126867!2d106.8677508!3d-6.2876564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f93bc38819%3A0xf8b327c8d0b18239!2sFOTOCOPY%20PRATAMA!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Animasi Printer Joget (Kiri Bawah) -->
+    <div
+      class="fixed bottom-5 left-5 z-50 flex items-center gap-2 bg-white/90 backdrop-blur-md px-3 py-2 rounded-2xl shadow-xl border border-slate-200 transition-all duration-300 hover:scale-105"
+    >
+      <div class="w-12 h-12 flex items-center justify-center animate-dance">
+        <i class="fas fa-print text-3xl text-blue-600"></i>
+      </div>
+      <div class="hidden sm:flex flex-col">
+        <span class="text-xs font-bold text-slate-800">Cetak Cepat!</span>
+        <span class="text-[10px] text-blue-600 font-semibold">Siap Melayani</span>
+      </div>
+    </div>
+
+    <!-- Floating Music Player Widget (Kanan Bawah) -->
+    <div
+      class="fixed bottom-5 right-5 z-50 bg-white/90 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-3 transition-all duration-300 hover:scale-105"
+    >
+      <div
+        class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center animate-spin"
+        style="animation-duration: 8s"
+      >
+        <i class="fas fa-music text-sm"></i>
+      </div>
+      <div class="flex flex-col">
+        <span class="text-xs font-bold text-slate-800">Backsound Music</span>
+        <span class="text-[10px] text-slate-500">Fotocopy Pratama</span>
+      </div>
+      <audio id="bg-music" loop>
+        <source
+          src="d:\program web pwb\Oasis - Whatever Official Instrumental.mp3"
+          type="audio/mpeg"
+        />
+        Browser Anda tidak mendukung elemen audio.
+      </audio>
+      <button
+        onclick="toggleMusic()"
+        id="music-btn"
+        class="ml-2 w-9 h-9 rounded-xl bg-slate-100 hover:bg-blue-50 text-blue-600 flex items-center justify-center transition-colors"
+      >
+        <i id="music-icon" class="fas fa-play text-xs"></i>
+      </button>
+    </div>
+
+    <!-- Script Kontrol Musik -->
+    <script>
+      function toggleMusic() {
+        const music = document.getElementById("bg-music");
+        const icon = document.getElementById("music-icon");
+
+        if (music.paused) {
+          music.play();
+          icon.classList.remove("fa-play");
+          icon.classList.add("fa-pause");
+        } else {
+          music.pause();
+          icon.classList.remove("fa-pause");
+          icon.classList.add("fa-play");
+        }
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer
+      class="bg-slate-950 text-slate-500 py-6 text-center text-sm border-t border-slate-800"
+    >
+      <p>&copy; 2026 Fotocopy Pratama.</p>
+    </footer>
+  </body>
+</html>
